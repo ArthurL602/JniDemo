@@ -12,6 +12,8 @@ cmake_minimum_required(VERSION 3.4.1)
 
 FILE(GLOB SOURCE_LIST ${PROJECT_SOURCE_DIR}/src/main/cpp/*.cpp)
 
+INCLUDE_DIRECTORIES(${PROJECT_SOURCE_DIR}/src/main/cpp/include/)
+
 add_library( # Sets the name of the library.
              native-lib
 
