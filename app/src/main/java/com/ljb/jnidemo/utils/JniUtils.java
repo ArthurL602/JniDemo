@@ -18,4 +18,6 @@ public class JniUtils {
 
     public native void callFriendMethod();
 
+    public native void callCPlusPlusRefrence();
+
 }
