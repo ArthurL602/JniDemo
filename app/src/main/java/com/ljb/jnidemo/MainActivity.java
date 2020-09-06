@@ -22,6 +22,7 @@ public class MainActivity extends AppCompatActivity {
         tv.setText(jniUtils.getStringFromJni());
         jniUtils.printStudentMessage();
         jniUtils.callFriendMethod();
+        jniUtils.callOperation();
     }
 
 }

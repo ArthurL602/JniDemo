@@ -20,4 +20,6 @@ public class JniUtils {
 
     public native void callCPlusPlusRefrence();
 
+    public native void callOperation();
+
 }
