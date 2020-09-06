@@ -23,6 +23,7 @@ public class MainActivity extends AppCompatActivity {
         jniUtils.printStudentMessage();
         jniUtils.callFriendMethod();
         jniUtils.callOperation();
+        jniUtils.callTemplate();
     }
 
 }

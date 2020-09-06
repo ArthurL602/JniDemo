@@ -22,4 +22,6 @@ public class JniUtils {
 
     public native void callOperation();
 
+    public native void callTemplate();
+
 }
