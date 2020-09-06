@@ -96,14 +96,14 @@ int People::getAge() const {
     return this->m_age;
 }
 
-class Student : public People {
+class StudentThree : public People {
 private:
     float m_score;
 public:
     // using 只能改变基类中 public 和 protected 成员的访问权限，不能改变private 成员的访问权限，因为基类中 private 成员在派生类中是不可见的
     using People::m_age;//将protect 改为 public
 public:
-    Student(char* name ,int age , float score);
+    StudentThree(char* name ,int age , float score);
 
     void setScore(float score);
 
@@ -111,12 +111,12 @@ public:
 };
 
 //People(name, age)就是调用基类的构造函数
-Student::Student(char *name, int age, float score) :People(name,age),m_score(score){}
+StudentThree::StudentThree(char *name, int age, float score) :People(name,age),m_score(score){}
 
-void Student::setScore(float score) {
+void StudentThree::setScore(float score) {
     this->m_score = score;
 }
 
-float Student::getScore() const {
+float StudentThree::getScore() const {
     return this->m_score;
 }
